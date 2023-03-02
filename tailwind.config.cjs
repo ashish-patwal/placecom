@@ -4,7 +4,8 @@ module.exports = {
 	theme: {
 		extend: {
 			fontFamily: {
-				navbar: ['Open Sans']
+				navbar: ['Open Sans'],
+				homecover: ["'Bebas Neue'"]
 			}
 		}
 	},

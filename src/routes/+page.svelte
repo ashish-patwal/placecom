@@ -5,6 +5,7 @@
 
 	let ready = false
 	onMount(() => (ready = true))
+	const heading = ['BRIDGING', 'THE', 'GAP', 'BETWEEN', 'JOB', 'SEEKERS', 'AND', 'JOB', 'PROVIDERS']
 
 	const letters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'
 	const handleHackerText = event => {
@@ -21,7 +22,7 @@
 				.join('')
 
 			if (iters >= event.target.dataset.value.length) clearInterval(interval)
-			iters += 1 / 3
+			iters += 1 / 4
 		}, 30)
 	}
 </script>
@@ -33,14 +34,19 @@
 
 <section class="relative">
 	{#if ready}
-		<p
-			data-value="BRIDGING THE GAP BETWEEN JOB SEEKERS AND JOB PROVIDERS"
-			on:mouseover={handleHackerText}
-			transition:fly={{ y: 200, duration: 1500 }}
-			class="absolute leading-[4rem] sm:text-center font-extrabold font-navbar text-white left-0 right-0 sm:mx-auto md:w-1/2 md:text-8xl w-3/4 sm:text-7xl text-6xl top-32 mx-3.5"
+		<div
+			class="absolute leading-[4rem] sm:text-center font-extrabold font-sans text-white left-0 right-0 sm:mx-auto md:w-1/2 md:text-8xl w-3/4 sm:text-7xl text-6xl top-32 mx-3.5"
 		>
-			BRIDGING THE GAP BETWEEN JOB SEEKERS AND JOB PROVIDERS
-		</p>
+			{#each heading as word}
+				<p
+					data-value={word}
+					on:mouseover={handleHackerText}
+					transition:fly={{ y: 200, duration: 1500 }}
+				>
+					{word}
+				</p>
+			{/each}
+		</div>
 	{/if}
 	<picture>
 		<source srcset={homecover} type="image/jpg" />

@@ -4,8 +4,8 @@
 	const handleMenu = event => {
 		let list = document.querySelector('ul')
 		!menu
-			? ((menu = !menu), list?.classList.add('top-16'), list?.classList.add('opacity-100'))
-			: ((menu = !menu), list?.classList.remove('top-16'), list?.classList.remove('opacity-100'))
+			? ((menu = !menu), list?.classList.add('top-20'), list?.classList.add('opacity-100'))
+			: ((menu = !menu), list?.classList.remove('top-20'), list?.classList.remove('opacity-100'))
 	}
 </script>
 

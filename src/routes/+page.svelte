@@ -35,16 +35,19 @@
 <section class="relative">
 	{#if ready}
 		<div
-			class="absolute leading-[4rem] sm:text-center font-extrabold font-sans text-white left-0 right-0 sm:mx-auto md:w-1/2 md:text-8xl w-3/4 sm:text-7xl text-6xl top-32 mx-3.5"
+			class="flex border-white p-4 border-8 flex-col absolute leading-[4rem] sm:text-center font-extrabold font-sans text-white left-0 right-0 sm:mx-auto md:w-1/2 md:text-8xl w-3/4 sm:text-7xl text-6xl top-32 mx-3.5"
+			transition:fly={{ y: 200, duration: 1300 }}
 		>
-			{#each heading as word}
-				<p
+			{#each heading as word, index}
+				<h1
+					class="md:self-center max-w-min"
 					data-value={word}
+					on:focus
 					on:mouseover={handleHackerText}
-					transition:fly={{ y: 200, duration: 1500 }}
+					transition:fly={{ y: 100, duration: 1500 + index * 150 }}
 				>
 					{word}
-				</p>
+				</h1>
 			{/each}
 		</div>
 	{/if}
@@ -55,5 +58,3 @@
 
 	<h1 class="text-white">Dumb Dumb</h1>
 </section>
-
-<!-- md:text-8xl top-32 md:left-1/4 md:right-1/4 text-6xl left-16 right-16 -->

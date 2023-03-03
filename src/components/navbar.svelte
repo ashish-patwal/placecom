@@ -10,7 +10,7 @@
 </script>
 
 <nav
-	class="p-4 fixed z-10 left-0 top-0 w-full text-white md:flex md:items-center md:justify-between"
+	class="p-4 fixed z-10 left-0 top-0 w-full text-white md:flex md:items-center md:justify-between backdrop-blur-md"
 >
 	<div class="flex justify-between items-center">
 		<span class="text-4xl font-bold font-navbar cursor-pointer">Placecom</span>

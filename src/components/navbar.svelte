@@ -1,10 +1,52 @@
+<script>
+	$: menu = false
+
+	const handleMenu = event => {
+		let list = document.querySelector('ul')
+		!menu
+			? ((menu = !menu), list?.classList.add('top-16'), list?.classList.add('opacity-100'))
+			: ((menu = !menu), list?.classList.remove('top-16'), list?.classList.remove('opacity-100'))
+	}
+</script>
+
 <nav
 	class="p-4 fixed z-10 left-0 top-0 w-full text-white md:flex md:items-center md:justify-between"
 >
-	<div>
+	<div class="flex justify-between items-center">
 		<span class="text-4xl font-bold font-navbar cursor-pointer">Placecom</span>
+		<button on:click={handleMenu} class="text-3xl cursor-pointer mx-4 md:hidden block">
+			{#if menu}
+				<svg
+					xmlns="http://www.w3.org/2000/svg"
+					fill="none"
+					viewBox="0 0 24 24"
+					stroke-width="1.5"
+					stroke="currentColor"
+					class="w-9 h-9"
+				>
+					<path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+				</svg>
+			{:else}
+				<svg
+					xmlns="http://www.w3.org/2000/svg"
+					fill="none"
+					viewBox="0 0 24 24"
+					stroke-width="1.5"
+					stroke="currentColor"
+					class="w-9 h-9"
+				>
+					<path
+						stroke-linecap="round"
+						stroke-linejoin="round"
+						d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+					/>
+				</svg>
+			{/if}
+		</button>
 	</div>
-	<ul class="md:flex md:items-center md:static absolute w-full left-0 md:w-auto">
+	<ul
+		class="md:flex md:items-center md:static absolute w-full left-0 md:w-auto md:opacity-100 opacity-0 top-[-24rem] transition-all ease-in duration-500"
+	>
 		<li class="mx-4 my-4 md:my-0">
 			<button
 				class="bg-gray-400/30 hover:bg-blue-300/30 text-lg font-navbar p-2 rounded-md text-white transition-all duration-500"

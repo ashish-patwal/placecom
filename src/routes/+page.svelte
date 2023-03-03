@@ -35,7 +35,7 @@
 <section class="relative">
 	{#if ready}
 		<div
-			class="flex border-white p-4 border-8 flex-col absolute leading-[4rem] sm:text-center font-extrabold font-sans text-white left-0 right-0 sm:mx-auto md:w-1/2 md:text-8xl w-3/4 sm:text-7xl text-6xl top-32 mx-3.5"
+			class="flex border-white p-4 border-8 flex-col absolute leading-[4rem] sm:text-center font-extrabold font-sans text-white left-0 right-0 sm:mx-auto  md:text-8xl w-min sm:text-7xl text-6xl top-24 mx-3.5"
 			transition:fly={{ y: 200, duration: 1300 }}
 		>
 			{#each heading as word, index}

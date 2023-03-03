@@ -45,21 +45,21 @@
 		</button>
 	</div>
 	<ul
-		class="md:flex md:items-center md:static absolute w-full left-0 md:w-auto md:opacity-100 opacity-0 top-[-24rem] transition-all ease-in duration-500"
+		class="flex md:flex-row flex-col items-end md:items-center md:static absolute w-full left-0 md:w-auto md:opacity-100 opacity-0 top-[-24rem] transition-all ease-in duration-500"
 	>
-		<li class="mx-4 my-4 md:my-0">
+		<li class="mx-8 md:mx-4 my-4 md:my-0">
 			<button
 				class="bg-gray-400/30 hover:bg-blue-300/30 text-lg font-navbar p-2 rounded-md text-white transition-all duration-500"
 				>Contact</button
 			>
 		</li>
-		<li class="mx-4 my-4 md:my-0">
+		<li class="mx-8 md:mx-4 my-4 md:my-0">
 			<button
 				class="bg-gray-400/30 hover:bg-blue-300/30 text-lg font-navbar p-2 rounded-md text-white transition-all duration-500"
 				>Discord</button
 			>
 		</li>
-		<li class="mx-4 my-4 md:my-0">
+		<li class="mx-8 md:mx-4 my-4 md:my-0">
 			<button
 				class="bg-gray-400/30 hover:bg-blue-300/30 text-lg font-navbar p-2 rounded-md text-white transition-all duration-500"
 				>About</button

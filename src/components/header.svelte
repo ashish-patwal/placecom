@@ -1,7 +1,7 @@
-<div class="navbar backdrop-blur-lg bg-transparent fixed top-0 left-0 z-10">
+<div class="navbar backdrop-blur-lg bg-transparent fixed top-0 left-0 z-10 px-6 py-4">
 	<div class="navbar-start">
 		<div class="dropdown">
-			<label tabindex="0" class="btn btn-ghost lg:hidden">
+			<label tabindex="0" class="btn btn-ghost text-white lg:hidden">
 				<svg
 					xmlns="http://www.w3.org/2000/svg"
 					class="h-5 w-5"
@@ -18,17 +18,17 @@
 			</label>
 			<ul
 				tabindex="0"
-				class="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52"
+				class="menu menu-compact dropdown-content mt-3 p-2 shadow bg-primary-focus rounded-box w-52 text-white text-2xl font-bold"
 			>
 				<li><a>Contact</a></li>
 				<li><a>Discord</a></li>
 				<li><a>About</a></li>
 			</ul>
 		</div>
-		<a class="font-extrabold normal-case text-4xl">Placecom</a>
+		<a class="font-extrabold text-white normal-case text-4xl">Placecom</a>
 	</div>
 	<div class="navbar-center hidden lg:flex">
-		<ul class="menu menu-horizontal px-1 font-navbar font-bold">
+		<ul class="menu menu-horizontal text-xl px-1 font-navbar font-bold text-base-200">
 			<li><a>Contact</a></li>
 			<li><a>Discord</a></li>
 			<li><a>About</a></li>

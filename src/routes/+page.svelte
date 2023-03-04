@@ -69,6 +69,8 @@
 		<div class="card">
 			<div
 				class="card-content"
+				on:blur
+				on:focus
 				on:mouseover={() => {
 					cardhovering = true
 				}}
@@ -100,14 +102,23 @@
 		</div>
 	</section>
 	<section
-		class="h-full w-full md:h-screen relative after:bg-gradient-to-br after:from-layerone-pink-three after:via-layerone-pink-two after:to-layerone-pink-one after:content-[''] after:inset-0 after:absolute after:skew-y-6"
+		class="h-full w-full md:h-screen relative bg-gradient-to-br from-layerone-pink-three via-layerone-pink-two to-layerone-pink-one "
 	/>
 	<section
-		class="h-full w-full md:h-screen relative after:bg-gradient-to-br after:from-layertwo-neon-three after:via-layertwo-neon-two after:to-layertwo-neon-one after:content-[''] after:inset-0 after:absolute after:skew-y-6"
+		class="h-full w-full md:h-screen relative bg-gradient-to-br from-layertwo-neon-three via-layertwo-neon-two to-layertwo-neon-one"
 	/>
 	<section
-		class="h-full w-full md:h-screen relative after:bg-gradient-to-br after:from-layerthree-violet-three after:via-layerthree-violet-two after:to-layerthree-violet-one after:content-[''] after:inset-0 after:absolute after:skew-y-6"
+		class="h-full w-full md:h-screen relative bg-gradient-to-br from-layerthree-violet-three via-layerthree-violet-two to-layerthree-violet-one"
 	/>
+	<!-- <section -->
+	<!-- 	class="h-full w-full md:h-screen relative after:bg-gradient-to-br after:from-layerone-pink-three after:via-layerone-pink-two after:to-layerone-pink-one after:content-[''] after:inset-0 after:absolute after:skew-y-6" -->
+	<!-- /> -->
+	<!-- <section -->
+	<!-- 	class="h-full w-full md:h-screen relative after:bg-gradient-to-br after:from-layertwo-neon-three after:via-layertwo-neon-two after:to-layertwo-neon-one after:content-[''] after:inset-0 after:absolute after:skew-y-6" -->
+	<!-- /> -->
+	<!-- <section -->
+	<!-- 	class="h-full w-full md:h-screen relative after:bg-gradient-to-br after:from-layerthree-violet-three after:via-layerthree-violet-two after:to-layerthree-violet-one after:content-[''] after:inset-0 after:absolute after:skew-y-6" -->
+	<!-- /> -->
 </main>
 
 <style>

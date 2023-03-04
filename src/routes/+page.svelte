@@ -26,9 +26,9 @@
 		}, 30)
 	}
 
-	let cardhovering = false
+	let kardhovering = false
 	const info =
-		'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'
+		'As we know that in India, placement drives are generally conducted for technical courses like B tech, MBA, polytechnic, etc; but in this race of placement, students with non technical background are somewhere left behind and here comes our PlaceCom, which is a Roorkee based startup that focuses on conducting placement drives for general courses like B.Sc, B.Com, B.Ed, B pharma and many more so that the students of these courses get more job opportunities and in-hand experience of campus placement.'
 </script>
 
 <svelte:head>
@@ -66,23 +66,26 @@
 		</picture>
 	</section>
 	<section class="flex p-10 md:p-16 justify-end bg-black w-full lg:h-screen h-full">
-		<div class="card">
+		<div class="card-compact image-full">
+			<figure><img src="" alt="" /></figure>
+		</div>
+		<div class="kard">
 			<div
-				class="card-content"
+				class="kard-content"
 				on:blur
 				on:focus
 				on:mouseover={() => {
-					cardhovering = true
+					kardhovering = true
 				}}
 				on:mouseout={() => {
-					cardhovering = false
+					kardhovering = false
 				}}
 			>
-				<h3 class="card-title">Who are we exactly ?</h3>
-				{#if cardhovering}
-					<h4 class="card-subtitle" transition:fly={{ y: 100, duration: 1000 }}>
+				<h3 class="kard-title">Who are we exactly ?</h3>
+				{#if kardhovering}
+					<h5 class="kard-subtitle" transition:fly={{ y: 100, duration: 1000 }}>
 						{info}
-					</h4>
+					</h5>
 				{/if}
 			</div>
 			<svg
@@ -91,7 +94,7 @@
 				viewBox="0 0 24 24"
 				stroke-width="1.5"
 				stroke="currentColor"
-				class="card-icon text-white w-9 h-9 md:w-13 md:w-12"
+				class="kard-icon text-white w-9 h-9 md:w-13 md:w-12"
 			>
 				<path
 					stroke-linecap="round"
@@ -129,7 +132,7 @@
 		--g2: rgb(236, 64, 122);
 		--g3: rgb(253, 216, 53);
 	}
-	.card {
+	.kard {
 		aspect-ratio: 1 / 1.6;
 		border: 0.5vmin solid var(--border);
 		cursor: pointer;
@@ -137,20 +140,20 @@
 		width: 60vmin;
 	}
 
-	.card:hover:before {
+	.kard:hover:before {
 		background-position: 100% 100%;
 		transform: scale(1.08, 1.03);
 	}
 
-	.card:hover > .card-content {
+	.kard:hover > .kard-content {
 		background-position: -10% 0%;
 	}
 
-	.card:hover > .card-icon {
+	.kard:hover > .kard-icon {
 		color: white;
 	}
 
-	.card:before {
+	.kard:before {
 		background: linear-gradient(
 			130deg,
 			transparent 0% 33%,
@@ -171,7 +174,7 @@
 		z-index: 1;
 	}
 
-	.card-content {
+	.kard-content {
 		background-image: radial-gradient(rgba(255, 255, 255, 0.2) 8%, transparent 8%);
 		background-position: 0% 0%;
 		background-size: 5vmin 5vmin;
@@ -183,25 +186,24 @@
 		z-index: 2;
 	}
 
-	.card-title,
-	.card-subtitle {
+	.kard-title,
+	.kard-subtitle {
 		color: white;
-		line-height: 1;
 		font-family: 'Anek Latin', sans-serif;
 		font-weight: 400;
 		margin: 0px;
 	}
 
-	.card-title {
-		font-size: 6vmin;
+	.kard-title {
+		font-size: 5vmin;
 	}
 
-	.card-subtitle {
-		font-size: 3vmin;
+	.kard-subtitle {
+		font-size: 2.5vmin;
 		margin-top: 2vmin;
 	}
 
-	.card-icon {
+	.kard-icon {
 		bottom: 0px;
 		color: rgba(255, 255, 255, 0.5);
 		font-size: 7vmin;

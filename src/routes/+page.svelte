@@ -175,6 +175,7 @@
 	.card-title,
 	.card-subtitle {
 		color: white;
+		line-height: 1;
 		font-family: 'Anek Latin', sans-serif;
 		font-weight: 400;
 		margin: 0px;

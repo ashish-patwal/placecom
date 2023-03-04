@@ -2,6 +2,9 @@
 	import { onMount } from 'svelte'
 	import { fly } from 'svelte/transition'
 	import homecover from '$lib/images/homecover.jpg'
+	import student from '$lib/images/student.svg'
+	import interview from '$lib/images/interview.svg'
+	import career from '$lib/images/career.svg'
 
 	let ready = false
 	onMount(() => (ready = true))
@@ -65,10 +68,29 @@
 			/>
 		</picture>
 	</section>
-	<section class="flex p-10 md:p-16 justify-end bg-black w-full lg:h-screen h-full">
-		<div class="card-compact image-full">
-			<figure><img src="" alt="" /></figure>
+	<section class="flex p-10 md:p-16 gap-16 flex-wrap justify-center bg-black w-full">
+		<div>
+			<div class="lg:w-96 md:w-80 w-72 carousel rounded-box">
+				<div class="carousel-item w-full">
+					<img src={student} class="w-full bg-primary" alt="Tailwind CSS Carousel component" />
+				</div>
+				<div class="carousel-item w-full bg-secondary">
+					<img src={interview} class="w-full" alt="Tailwind CSS Carousel component" />
+				</div>
+				<div class="carousel-item w-full bg-accent">
+					<img src={career} class="w-full" alt="Tailwind CSS Carousel component" />
+				</div>
+			</div>
 		</div>
+		<!-- <div class="card w-96 h-max bg-base-100 shadow-xl"> -->
+		<!-- 	<div class="card-body"> -->
+		<!-- 		<h2 class="card-title">Card title!</h2> -->
+		<!-- 		<p>If a dog chews shoes whose shoes does he choose?</p> -->
+		<!-- 		<div class="card-actions justify-end"> -->
+		<!-- 			<button class="btn btn-primary">Buy Now</button> -->
+		<!-- 		</div> -->
+		<!-- 	</div> -->
+		<!-- </div> -->
 		<div class="kard">
 			<div
 				class="kard-content"

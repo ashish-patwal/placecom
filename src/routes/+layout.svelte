@@ -1,12 +1,23 @@
 <script>
 	import '../app.css'
-	import Navbar from '../components/navbar.svelte'
+	import Header from '../components/header.svelte'
 </script>
 
-<div class="overflow-x-hidden w-screen h-screen bg-white">
-	<Navbar />
+<main data-theme="cupcake">
+	<Header />
+	<slot />
+</main>
 
-	<main>
-		<slot />
-	</main>
-</div>
+<style>
+	:root::-webkit-scrollbar {
+		display: none;
+	}
+
+	:root {
+		-ms-overflow-style: none;
+		scrollbar-width: none;
+		overflow-x: hidden;
+		width: '100vw';
+		height: '100vh';
+	}
+</style>

@@ -76,14 +76,32 @@
 				Taking you a step forward in you career !
 			</h1>
 			<div class="lg:w-96 md:w-80 w-72 carousel carousel-center space-x-4 rounded-box">
-				<div class="carousel-item w-full">
+				<div id="slide1" class="carousel-item relative w-full">
 					<img src={student} class="w-full" alt="Tailwind CSS Carousel component" />
+					<div
+						class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
+					>
+						<a href="#slide3" class="btn btn-warning btn-circle">❮</a>
+						<a href="#slide2" class="btn btn-warning btn-circle">❯</a>
+					</div>
 				</div>
-				<div class="carousel-item w-full">
+				<div id="slide2" class="carousel-item relative w-full">
 					<img src={interview} class="w-full" alt="Tailwind CSS Carousel component" />
+					<div
+						class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
+					>
+						<a href="#slide1" class="btn btn-warning btn-circle">❮</a>
+						<a href="#slide3" class="btn btn-warning btn-circle">❯</a>
+					</div>
 				</div>
-				<div class="carousel-item w-full">
+				<div id="slide3" class="carousel-item relative w-full">
 					<img src={career} class="w-full" alt="Tailwind CSS Carousel component" />
+					<div
+						class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
+					>
+						<a href="#slide2" class="btn btn-warning btn-circle">❮</a>
+						<a href="#slide1" class="btn btn-warning btn-circle">❯</a>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -108,9 +126,9 @@
 					kardhovering = false
 				}}
 			>
-				<h3 class="kard-title">Who are we exactly ?</h3>
+				<h3 class="kard-title font-aneklatin">Who are we exactly ?</h3>
 				{#if kardhovering}
-					<h5 class="kard-subtitle" transition:fly={{ y: 100, duration: 1000 }}>
+					<h5 class="kard-subtitle font-aneklatin" transition:fly={{ y: 100, duration: 1000 }}>
 						{info}
 					</h5>
 				{/if}
@@ -218,7 +236,6 @@
 	.kard-title,
 	.kard-subtitle {
 		color: white;
-		font-family: 'Anek Latin', sans-serif;
 		font-weight: 400;
 		margin: 0px;
 	}

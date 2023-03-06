@@ -68,16 +68,21 @@
 			/>
 		</picture>
 	</section>
-	<section class="flex p-10 md:p-16 gap-16 flex-wrap justify-center bg-black w-full">
-		<div>
-			<div class="lg:w-96 md:w-80 w-72 carousel rounded-box">
+	<section
+		class="flex flex-col md:flex-row p-10 md:p-16 gap-16 md:flex-wrap md:justify-center bg-black w-full"
+	>
+		<div class="flex flex-col items-center justify-evenly">
+			<h1 class="md:text-6xl text-center text-5xl font-sacramento text-white max-w-lg my-6">
+				Taking you a step forward in you career !
+			</h1>
+			<div class="lg:w-96 md:w-80 w-72 carousel carousel-center space-x-4 rounded-box">
 				<div class="carousel-item w-full">
-					<img src={student} class="w-full bg-primary" alt="Tailwind CSS Carousel component" />
+					<img src={student} class="w-full" alt="Tailwind CSS Carousel component" />
 				</div>
-				<div class="carousel-item w-full bg-secondary">
+				<div class="carousel-item w-full">
 					<img src={interview} class="w-full" alt="Tailwind CSS Carousel component" />
 				</div>
-				<div class="carousel-item w-full bg-accent">
+				<div class="carousel-item w-full">
 					<img src={career} class="w-full" alt="Tailwind CSS Carousel component" />
 				</div>
 			</div>
@@ -155,11 +160,13 @@
 		--g3: rgb(253, 216, 53);
 	}
 	.kard {
-		aspect-ratio: 1 / 1.6;
+		aspect-ratio: 1 / 1.4;
 		border: 0.5vmin solid var(--border);
 		cursor: pointer;
 		position: relative;
 		width: 60vmin;
+		display: flex;
+		align-self: center;
 	}
 
 	.kard:hover:before {

@@ -25,7 +25,7 @@
 				<li><a>About</a></li>
 			</ul>
 		</div>
-		<a class="font-extrabold text-white normal-case md:text-4xl text-3xl">Placecom</a>
+		<a class="font-BebasNeue text-white normal-case text-4xl ">Placecom</a>
 	</div>
 	<div class="navbar-center hidden lg:flex">
 		<ul class="menu menu-horizontal text-xl px-1 font-navbar font-bold text-base-200">

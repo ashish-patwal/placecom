@@ -16,8 +16,10 @@ module.exports = {
 			},
 			fontFamily: {
 				navbar: ['Open Sans'],
-				homecover: ["'Bebas Neue'"],
-				sacramento: ['Sacramento']
+				BebasNeue: ["'Bebas Neue'"],
+				sacramento: ['Sacramento'],
+				montserrat: ['Montserrat'],
+				aneklatin: ['Anek Latin']
 			}
 		}
 	},

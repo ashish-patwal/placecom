@@ -1,13 +1,13 @@
 <script>
 	import '../app.css'
 	import Header from '../components/header.svelte'
-  import Footer from '../components/footer.svelte'
+	import Footer from '../components/footer.svelte'
 </script>
 
 <main data-theme="cupcake">
 	<Header />
 	<slot />
-  <Footer />
+	<Footer />
 </main>
 
 <style>

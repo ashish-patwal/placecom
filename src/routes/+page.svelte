@@ -1,10 +1,16 @@
 <script>
 	import { onMount } from 'svelte'
 	import { fly } from 'svelte/transition'
+	import tilt from '../components/tilt.js'
 	import homecover from '$lib/images/homecover.jpg'
 	import student from '$lib/images/student.svg'
 	import interview from '$lib/images/interview.svg'
 	import career from '$lib/images/career.svg'
+	import proposalPresentation from '$lib/images/team/proposal-presentation.svg'
+	import placementPlanning from '$lib/images/team/placement-planning.svg'
+	import student2 from '$lib/images/students/student-2.svg'
+	import student3 from '$lib/images/students/student-3.svg'
+	import student4 from '$lib/images/students/student-4.svg'
 
 	let ready = false
 	onMount(() => (ready = true))
@@ -150,23 +156,84 @@
 		</div>
 	</section>
 	<section
-		class="h-full w-full md:h-screen relative bg-gradient-to-br from-layerone-pink-three via-layerone-pink-two to-layerone-pink-one "
-	/>
+		class="flex flex-wrap h-full w-full md:h-screen p-10 relative bg-gradient-to-br from-layerone-pink-three via-layerone-pink-two to-layerone-pink-one "
+	>
+		<div class="flex flex-col justify-center font-poppins text-lime gap-6 basis-1/2">
+			<h1 class="text-5xl font-bold">PROPOSAL PRESENTATION</h1>
+			<p>
+				Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minus harum exercitationem
+				commodi. Officia expedita excepturi distinctio? Obcaecati, nemo neque dignissimos numquam
+				ratione illo ipsam mollitia, alias ipsum natus name dicta? Lorem, ipsum dolor sit amet
+				consectetur adipisicing elit. Name, molestiae error earum, laborum aperiam fugit ipsam
+				aliquam autem nesciunt odio rem similique deserunt distinctio, ipsum id quas quos provident
+				iure? Enim perferendis accusamus porro facilis ducimus fugiat, distinctio cumque nulla quas
+				voluptas voluptate placeat name unde delectus. Necessitatibus nisi magni accusantium,
+				maxime, sapiente nulla possimus tempora itaque a, ullam modi. Libero aperiam et earum soluta
+				doloremque architecto dolor, mollitia hic qui ex illum debitis minima voluptas name saepe
+				fugit corrupti quidem dolorum, perspiciatis nostrum esse recusandae deserunt adipisci.
+				Tempora, quam.
+			</p>
+		</div>
+		<div class="flex basis-1/2 justify-center">
+			<img
+				use:tilt={{ scale: 1.1, max: 5 }}
+				src={proposalPresentation}
+				alt="proposal presentation"
+			/>
+		</div>
+	</section>
 	<section
-		class="h-full w-full md:h-screen relative bg-gradient-to-br from-layertwo-neon-three via-layertwo-neon-two to-layertwo-neon-one"
-	/>
+		class="flex flex-wrap h-full w-full md:h-screen p-10 relative bg-gradient-to-br from-layertwo-neon-three via-layertwo-neon-two to-layertwo-neon-one"
+	>
+		<div class="flex basis-1/2 justify-center">
+			<img use:tilt={{ scale: 1.1, max: 5 }} src={placementPlanning} alt="placement planning" />
+		</div>
+		<div class="flex flex-col justify-center font-poppins gap-6 basis-1/2">
+			<h1 class="text-5xl font-bold">PLACEMENT PLANNING</h1>
+			<p>
+				Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minus harum exercitationem
+				commodi. Officia expedita excepturi distinctio? Obcaecati, nemo neque dignissimos numquam
+				ratione illo ipsam mollitia, alias ipsum natus name dicta? Lorem, ipsum dolor sit amet
+				consectetur adipisicing elit. Name, molestiae error earum, laborum aperiam fugit ipsam
+				aliquam autem nesciunt odio rem similique deserunt distinctio, ipsum id quas quos provident
+				iure? Enim perferendis accusamus porro facilis ducimus fugiat, distinctio cumque nulla quas
+				voluptas voluptate placeat name unde delectus. Necessitatibus nisi magni accusantium,
+				maxime, sapiente nulla possimus tempora itaque a, ullam modi. Libero aperiam et earum soluta
+				doloremque architecto dolor, mollitia hic qui ex illum debitis minima voluptas name saepe
+				fugit corrupti quidem dolorum, perspiciatis nostrum esse recusandae deserunt adipisci.
+				Tempora, quam.
+			</p>
+		</div>
+	</section>
 	<section
-		class="h-full w-full md:h-screen relative bg-gradient-to-br from-layerthree-violet-three via-layerthree-violet-two to-layerthree-violet-one"
-	/>
-	<!-- <section -->
-	<!-- 	class="h-full w-full md:h-screen relative after:bg-gradient-to-br after:from-layerone-pink-three after:via-layerone-pink-two after:to-layerone-pink-one after:content-[''] after:inset-0 after:absolute after:skew-y-6" -->
-	<!-- /> -->
-	<!-- <section -->
-	<!-- 	class="h-full w-full md:h-screen relative after:bg-gradient-to-br after:from-layertwo-neon-three after:via-layertwo-neon-two after:to-layertwo-neon-one after:content-[''] after:inset-0 after:absolute after:skew-y-6" -->
-	<!-- /> -->
-	<!-- <section -->
-	<!-- 	class="h-full w-full md:h-screen relative after:bg-gradient-to-br after:from-layerthree-violet-three after:via-layerthree-violet-two after:to-layerthree-violet-one after:content-[''] after:inset-0 after:absolute after:skew-y-6" -->
-	<!-- /> -->
+		class="flex h-full w-full md:h-screen p-10 relative bg-gradient-to-br from-layerthree-violet-three via-layerthree-violet-two to-layerthree-violet-one"
+	>
+		<div class="flex flex-col justify-center font-poppins text-mist gap-6 basis-1/2">
+			<h1 class="text-5xl font-bold">HIRING GREAT TALENTS FOR YOU</h1>
+			<p>
+				Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minus harum exercitationem
+				commodi. Officia expedita excepturi distinctio? Obcaecati, nemo neque dignissimos numquam
+				ratione illo ipsam mollitia, alias ipsum natus name dicta? Lorem, ipsum dolor sit amet
+				consectetur adipisicing elit. Name, molestiae error earum, laborum aperiam fugit ipsam
+				aliquam autem nesciunt odio rem similique deserunt distinctio, ipsum id quas quos provident
+				iure? Enim perferendis accusamus porro facilis ducimus fugiat, distinctio cumque nulla quas
+				voluptas voluptate placeat name unde delectus. Necessitatibus nisi magni accusantium,
+				maxime, sapiente nulla possimus tempora itaque a, ullam modi. Libero aperiam et earum soluta
+				doloremque architecto dolor, mollitia hic qui ex illum debitis minima voluptas name saepe
+				fugit corrupti quidem dolorum, perspiciatis nostrum esse recusandae deserunt adipisci.
+				Tempora, quam.
+			</p>
+		</div>
+		<div class="flex flex-col justify-end basis-1/4">
+			<img src={student2} alt="student 2" />
+		</div>
+		<div class="flex flex-col justify-end basis-1/5">
+			<img src={student3} alt="student 3" />
+		</div>
+		<div class="flex flex-col justify-end basis-1/6">
+			<img src={student4} alt="student 4" />
+		</div>
+	</section>
 </main>
 
 <style>

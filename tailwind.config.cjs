@@ -12,14 +12,17 @@ module.exports = {
 				'layertwo-neon-three': '#28DF99',
 				'layerthree-violet-one': '#F0E3FF',
 				'layerthree-violet-two': '#D89CF6',
-				'layerthree-violet-three': '#916DD5'
+				'layerthree-violet-three': '#916DD5',
+				lime: '#9CFF2E',
+				mist: '#B9F3E4'
 			},
 			fontFamily: {
 				navbar: ['Open Sans'],
 				BebasNeue: ["'Bebas Neue'"],
 				sacramento: ['Sacramento'],
 				montserrat: ['Montserrat'],
-				aneklatin: ['Anek Latin']
+				aneklatin: ['Anek Latin'],
+				poppins: ['Poppins']
 			}
 		}
 	},

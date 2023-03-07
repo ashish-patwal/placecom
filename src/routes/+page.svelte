@@ -49,12 +49,12 @@
 	<section class="relative">
 		{#if ready}
 			<div
-				class="flex border-white p-4 border-8 flex-col absolute leading-[4rem] sm:text-center font-extrabold font-sans text-white left-0 right-0 sm:mx-auto  md:text-8xl w-min sm:text-7xl text-6xl top-24 mx-3.5"
+				class="absolute left-0 right-0 top-24 mx-3.5 flex w-min flex-col border-8 border-white p-4 font-sans text-6xl font-extrabold  leading-[4rem] text-white sm:mx-auto sm:text-center sm:text-7xl md:text-8xl"
 				transition:fly={{ y: 200, duration: 1300 }}
 			>
 				{#each heading as word, index}
 					<h1
-						class="md:self-center max-w-min"
+						class="max-w-min md:self-center"
 						data-value={word}
 						on:focus
 						on:mouseover={handleHackerText}
@@ -75,38 +75,38 @@
 		</picture>
 	</section>
 	<section
-		class="flex flex-col md:flex-row p-10 md:p-16 gap-16 md:flex-wrap md:justify-center bg-black w-full"
+		class="flex w-full flex-col gap-16 bg-black p-10 md:flex-row md:flex-wrap md:justify-center md:p-16"
 	>
 		<div class="flex flex-col items-center justify-evenly">
-			<h1 class="md:text-6xl text-center text-5xl font-sacramento text-white max-w-lg my-6">
+			<h1 class="my-6 max-w-lg text-center font-sacramento text-5xl text-white md:text-6xl">
 				Taking you a step forward in you career !
 			</h1>
-			<div class="lg:w-96 md:w-80 w-72 carousel carousel-center space-x-4 rounded-box">
+			<div class="carousel-center carousel rounded-box w-72 space-x-4 md:w-80 lg:w-96">
 				<div id="slide1" class="carousel-item relative w-full">
 					<img src={student} class="w-full" alt="Tailwind CSS Carousel component" />
 					<div
-						class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
+						class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between"
 					>
-						<a href="#slide3" class="btn btn-warning btn-circle">❮</a>
-						<a href="#slide2" class="btn btn-warning btn-circle">❯</a>
+						<a href="#slide3" class="btn-warning btn-circle btn">❮</a>
+						<a href="#slide2" class="btn-warning btn-circle btn">❯</a>
 					</div>
 				</div>
 				<div id="slide2" class="carousel-item relative w-full">
 					<img src={interview} class="w-full" alt="Tailwind CSS Carousel component" />
 					<div
-						class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
+						class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between"
 					>
-						<a href="#slide1" class="btn btn-warning btn-circle">❮</a>
-						<a href="#slide3" class="btn btn-warning btn-circle">❯</a>
+						<a href="#slide1" class="btn-warning btn-circle btn">❮</a>
+						<a href="#slide3" class="btn-warning btn-circle btn">❯</a>
 					</div>
 				</div>
 				<div id="slide3" class="carousel-item relative w-full">
 					<img src={career} class="w-full" alt="Tailwind CSS Carousel component" />
 					<div
-						class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
+						class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between"
 					>
-						<a href="#slide2" class="btn btn-warning btn-circle">❮</a>
-						<a href="#slide1" class="btn btn-warning btn-circle">❯</a>
+						<a href="#slide2" class="btn-warning btn-circle btn">❮</a>
+						<a href="#slide1" class="btn-warning btn-circle btn">❯</a>
 					</div>
 				</div>
 			</div>
@@ -145,7 +145,7 @@
 				viewBox="0 0 24 24"
 				stroke-width="1.5"
 				stroke="currentColor"
-				class="kard-icon text-white w-9 h-9 md:w-13 md:w-12"
+				class="kard-icon md:w-13 h-9 w-9 text-white md:w-12"
 			>
 				<path
 					stroke-linecap="round"
@@ -156,9 +156,9 @@
 		</div>
 	</section>
 	<section
-		class="flex flex-wrap h-full w-full md:h-screen p-10 relative bg-gradient-to-br from-layerone-pink-three via-layerone-pink-two to-layerone-pink-one "
+		class="relative flex h-full w-full flex-wrap bg-gradient-to-br from-layerone-pink-three via-layerone-pink-two to-layerone-pink-one p-10 md:h-screen "
 	>
-		<div class="flex flex-col justify-center font-poppins text-lime gap-6 basis-1/2">
+		<div class="flex basis-1/2 flex-col justify-center gap-6 font-poppins text-lime">
 			<h1 class="text-5xl font-bold">PROPOSAL PRESENTATION</h1>
 			<p>
 				Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minus harum exercitationem
@@ -183,12 +183,12 @@
 		</div>
 	</section>
 	<section
-		class="flex flex-wrap h-full w-full md:h-screen p-10 relative bg-gradient-to-br from-layertwo-neon-three via-layertwo-neon-two to-layertwo-neon-one"
+		class="relative flex h-full w-full flex-wrap bg-gradient-to-br from-layertwo-neon-three via-layertwo-neon-two to-layertwo-neon-one p-10 md:h-screen"
 	>
 		<div class="flex basis-1/2 justify-center">
 			<img use:tilt={{ scale: 1.1, max: 5 }} src={placementPlanning} alt="placement planning" />
 		</div>
-		<div class="flex flex-col justify-center font-poppins gap-6 basis-1/2">
+		<div class="flex basis-1/2 flex-col justify-center gap-6 font-poppins">
 			<h1 class="text-5xl font-bold">PLACEMENT PLANNING</h1>
 			<p>
 				Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minus harum exercitationem
@@ -206,9 +206,9 @@
 		</div>
 	</section>
 	<section
-		class="flex h-full w-full md:h-screen p-10 relative bg-gradient-to-br from-layerthree-violet-three via-layerthree-violet-two to-layerthree-violet-one"
+		class="relative flex h-full w-full bg-gradient-to-br from-layerthree-violet-three via-layerthree-violet-two to-layerthree-violet-one p-10 md:h-screen"
 	>
-		<div class="flex flex-col justify-center font-poppins text-mist gap-6 basis-1/2">
+		<div class="flex basis-1/2 flex-col justify-center gap-6 font-poppins text-mist">
 			<h1 class="text-5xl font-bold">HIRING GREAT TALENTS FOR YOU</h1>
 			<p>
 				Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minus harum exercitationem
@@ -224,13 +224,13 @@
 				Tempora, quam.
 			</p>
 		</div>
-		<div class="flex flex-col justify-end basis-1/4">
+		<div class="flex basis-1/4 flex-col justify-end">
 			<img src={student2} alt="student 2" />
 		</div>
-		<div class="flex flex-col justify-end basis-1/5">
+		<div class="flex basis-1/5 flex-col justify-end">
 			<img src={student3} alt="student 3" />
 		</div>
-		<div class="flex flex-col justify-end basis-1/6">
+		<div class="flex basis-1/6 flex-col justify-end">
 			<img src={student4} alt="student 4" />
 		</div>
 	</section>

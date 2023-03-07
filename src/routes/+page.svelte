@@ -1,7 +1,7 @@
 <script>
 	import { onMount } from 'svelte'
 	import { fly } from 'svelte/transition'
-  import GradientCard from '../components/gradient-card.svelte'
+	import GradientCard from '../components/gradient-card.svelte'
 	import homecover from '$lib/images/homecover.jpg'
 	import student from '$lib/images/student.svg'
 	import interview from '$lib/images/interview.svg'
@@ -34,7 +34,6 @@
 			iters += 1 / 4
 		}, 30)
 	}
-
 </script>
 
 <svelte:head>
@@ -90,10 +89,10 @@
 				</div>
 			</div>
 		</div>
-    <GradientCard/>
+		<GradientCard />
 	</section>
 	<section
-		class="relative flex justify-center h-full w-full flex-wrap bg-gradient-to-br from-layerone-pink-three via-layerone-pink-two to-layerone-pink-one p-10 md:h-screen "
+		class="relative flex h-full w-full flex-wrap justify-center bg-gradient-to-br from-layerone-pink-three via-layerone-pink-two to-layerone-pink-one p-10 md:h-screen "
 	>
 		<div class="flex basis-1/2 flex-col justify-center gap-6 font-poppins text-lime">
 			<h1 class="text-5xl font-bold">PROPOSAL PRESENTATION</h1>
@@ -111,16 +110,16 @@
 				Tempora, quam.
 			</p>
 		</div>
-		<div  class="flex basis-1/2 justify-center">
+		<div class="flex basis-1/2 justify-center">
 			<img
-        class="hover:scale-110 hover:brightness-105 transition-all delay-100 ease-in-out"
+				class="transition-all delay-100 ease-in-out hover:scale-110 hover:brightness-105"
 				src={proposalPresentation}
 				alt="proposal presentation"
 			/>
 		</div>
 	</section>
 	<section
-		class="relative flex justify-center h-full w-full flex-wrap bg-gradient-to-br from-layertwo-neon-three via-layertwo-neon-two to-layertwo-neon-one p-10 md:h-screen"
+		class="relative flex h-full w-full flex-wrap justify-center bg-gradient-to-br from-layertwo-neon-three via-layertwo-neon-two to-layertwo-neon-one p-10 md:h-screen"
 	>
 		<div class="flex basis-1/2 flex-col justify-center gap-6 font-poppins">
 			<h1 class="text-5xl font-bold">PLACEMENT PLANNING</h1>
@@ -138,10 +137,12 @@
 				Tempora, quam.
 			</p>
 		</div>
-		<div class="flex md:-order-1 basis-1/2 justify-center">
-			<img 
-        class="hover:scale-110 hover:brightness-105 transition-all delay-100 ease-in-out"
-        src={placementPlanning} alt="placement planning" />
+		<div class="flex basis-1/2 justify-center md:-order-1">
+			<img
+				class="transition-all delay-100 ease-in-out hover:scale-110 hover:brightness-105"
+				src={placementPlanning}
+				alt="placement planning"
+			/>
 		</div>
 	</section>
 	<section
@@ -163,22 +164,28 @@
 				Tempora, quam.
 			</p>
 		</div>
-    <div class="flex md:flex-row flex-col basis-1/2 justify-center">
-      <div class="flex basis-1/3 flex-col justify-center">
-        <img 
-          class="hover:scale-110 hover:brightness-105 transition-all delay-100 ease-in-out"
-          src={student2} alt="student 2" />
-      </div>
-      <div class="flex basis-1/3 flex-col justify-center">
-        <img 
-          class="hover:scale-110 hover:brightness-105 transition-all delay-100 ease-in-out"
-          src={student3} alt="student 3" />
-      </div>
-      <div class="flex basis-1/4 flex-col justify-center">
-        <img 
-          class="hover:scale-110 hover:brightness-105 transition-all delay-100 ease-in-out"
-          src={student4} alt="student 4" />
-      </div>
-    </div>
+		<div class="flex basis-1/2 flex-col justify-center md:flex-row">
+			<div class="flex basis-1/3 flex-col justify-center">
+				<img
+					class="transition-all delay-100 ease-in-out hover:scale-110 hover:brightness-105"
+					src={student2}
+					alt="student 2"
+				/>
+			</div>
+			<div class="flex basis-1/3 flex-col justify-center">
+				<img
+					class="transition-all delay-100 ease-in-out hover:scale-110 hover:brightness-105"
+					src={student3}
+					alt="student 3"
+				/>
+			</div>
+			<div class="flex basis-1/4 flex-col justify-center">
+				<img
+					class="transition-all delay-100 ease-in-out hover:scale-110 hover:brightness-105"
+					src={student4}
+					alt="student 4"
+				/>
+			</div>
+		</div>
 	</section>
 </main>

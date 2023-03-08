@@ -38,14 +38,14 @@
 
 <svelte:head>
 	<title>Home</title>
-	<meta name="description" content="Svelte demo app" />
+	<meta name="Placecom" content="Homepage" />
 </svelte:head>
 
 <main>
 	<section class="relative">
 		{#if ready}
 			<div
-				class="absolute left-0 right-0 top-24 mx-3.5 flex w-min flex-col border-8 border-white p-4 font-sans text-6xl font-extrabold  leading-[4rem] text-white sm:mx-auto sm:text-center sm:text-7xl md:text-8xl"
+				class="absolute left-0 right-0 top-24 mx-3.5 flex w-min flex-col border-8 border-white p-4 font-sans text-6xl font-extrabold leading-[4rem] text-white mx-auto sm:text-center sm:text-7xl md:text-8xl"
 				transition:fly={{ y: 200, duration: 1300 }}
 			>
 				{#each heading as word, index}
@@ -61,14 +61,13 @@
 				{/each}
 			</div>
 		{/if}
-		<picture>
-			<source srcset={homecover} type="image/jpg" />
+		<div class="w-screen overflow-hidden">
 			<img
-				class="h-[100rem] max-w-none 2xl:h-auto 2xl:max-w-full"
+				class="h-[85rem] sm:h-[100rem] max-w-none 2xl:h-auto 2xl:max-w-full"
 				srcset={homecover}
 				alt="homecover"
 			/>
-		</picture>
+		</div>
 	</section>
 	<section
 		class="flex w-full flex-col gap-16 bg-black p-10 md:flex-row md:flex-wrap md:justify-center md:p-16"

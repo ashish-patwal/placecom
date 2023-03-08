@@ -45,7 +45,7 @@
 	<section class="relative">
 		{#if ready}
 			<div
-				class="absolute left-0 right-0 top-24 mx-3.5 flex w-min flex-col border-8 border-white p-4 font-sans text-6xl font-extrabold leading-[4rem] text-white mx-auto sm:text-center sm:text-7xl md:text-8xl"
+				class="absolute left-0 right-0 top-24 mx-3.5 mx-auto flex w-min flex-col border-8 border-white p-4 font-sans text-6xl font-extrabold leading-[4rem] text-white sm:text-center sm:text-7xl md:text-8xl"
 				transition:fly={{ y: 200, duration: 1300 }}
 			>
 				{#each heading as word, index}
@@ -63,7 +63,7 @@
 		{/if}
 		<div class="w-screen overflow-hidden">
 			<img
-				class="h-[85rem] sm:h-[100rem] max-w-none 2xl:h-auto 2xl:max-w-full"
+				class="h-[85rem] max-w-none sm:h-[100rem] 2xl:h-auto 2xl:max-w-full"
 				srcset={homecover}
 				alt="homecover"
 			/>

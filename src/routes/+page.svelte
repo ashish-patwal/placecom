@@ -45,20 +45,22 @@
 	<section class="relative">
 		{#if ready}
 			<div
-				class="absolute left-0 right-0 top-24 mx-3.5 mx-auto flex w-min flex-col border-8 border-white p-8 font-sans text-6xl font-extrabold leading-[4rem] text-white sm:text-center sm:text-7xl md:text-8xl"
+				class="absolute left-0 right-0 top-24 mx-auto flex w-min flex-col border-8 border-white p-4 font-sans text-6xl font-extrabold leading-[4rem] text-white sm:text-center sm:text-7xl md:text-8xl"
 				transition:fly={{ y: 200, duration: 1300 }}
 			>
-				{#each heading as word, index}
-					<h1
-						class="max-w-min md:self-center"
-						data-value={word}
-						on:focus
-						on:mouseover={handleHackerText}
-						transition:fly={{ y: 100, duration: 1500 + index * 150 }}
-					>
-						{word}
-					</h1>
-				{/each}
+				<div class="relative">
+					{#each heading as word, index}
+						<h1
+							class="max-w-min md:self-center"
+							data-value={word}
+							on:focus
+							on:mouseover={handleHackerText}
+							transition:fly={{ y: 100, duration: 1500 + index * 150 }}
+						>
+							{word}
+						</h1>
+					{/each}
+				</div>
 			</div>
 		{/if}
 		<div class="w-screen overflow-hidden">

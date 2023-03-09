@@ -115,6 +115,9 @@
 			/>
 		</div>
 		<div class="relative flex basis-1/2 justify-center">
+			<div class="chat chat-start absolute top-36 right-10 text-2xl font-extrabold">
+				<div class="chat-bubble chat-bubble-primary">What kind of nonsense is this</div>
+			</div>
 			<svg
 				version="1.1"
 				xmlns="http://www.w3.org/2000/svg"
@@ -176,7 +179,10 @@
 				alt="placement planning"
 			/>
 		</div>
-		<div class="flex basis-1/2 justify-center md:-order-1">
+		<div class="relative flex basis-1/2 justify-center md:-order-1">
+			<div class="chat chat-start absolute top-36 right-10 text-2xl font-extrabold">
+				<div class="chat-bubble chat-bubble-secondary">Ahh Shit! Here we go again</div>
+			</div>
 			<svg
 				version="1.1"
 				xmlns="http://www.w3.org/2000/svg"

@@ -14,6 +14,7 @@ module.exports = {
 				'layerthree-violet-two': '#D89CF6',
 				'layerthree-violet-three': '#916DD5',
 				lime: '#9CFF2E',
+				olive: '#39AEA9',
 				mist: '#B9F3E4'
 			},
 			fontFamily: {

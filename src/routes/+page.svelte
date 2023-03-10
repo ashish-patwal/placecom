@@ -8,9 +8,7 @@
 	import career from '$lib/images/career.svg'
 	import proposalPresentation from '$lib/images/team/proposal-presentation.svg'
 	import placementPlanning from '$lib/images/team/placement-planning.svg'
-	import student2 from '$lib/images/students/student-2.svg'
-	import student3 from '$lib/images/students/student-3.svg'
-	import student4 from '$lib/images/students/student-4.svg'
+	import students from '$lib/images/team/students.svg'
 
 	let ready = false
 	onMount(() => (ready = true))
@@ -158,7 +156,7 @@
 	<section
 		class="relative flex h-full w-full flex-wrap justify-center bg-gradient-to-br from-layertwo-neon-three via-layertwo-neon-two to-layertwo-neon-one p-10 md:h-screen"
 	>
-		<div class="flex basis-1/2 flex-col justify-center gap-6 p-8 font-poppins text-[#09A8FA]">
+		<div class="flex basis-1/2 flex-col justify-center gap-6 p-8 font-poppins text-olive">
 			<h1 class="text-5xl font-bold">PLACEMENT PLANNING</h1>
 			<p>
 				Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minus harum exercitationem
@@ -220,9 +218,9 @@
 		</div>
 	</section>
 	<section
-		class="relative flex h-full w-full bg-gradient-to-br from-layerthree-violet-three via-layerthree-violet-two to-layerthree-violet-one p-10 md:h-screen"
+		class="relative flex h-full w-full flex-wrap justify-center bg-gradient-to-br from-layerthree-violet-three via-layerthree-violet-two to-layerthree-violet-one p-10 md:h-screen"
 	>
-		<div class="flex basis-1/2 flex-col justify-center gap-6 font-poppins text-mist">
+		<div class="flex basis-1/2 flex-col justify-center gap-6 p-8 font-poppins text-mist">
 			<h1 class="text-5xl font-bold">HIRING GREAT TALENTS FOR YOU</h1>
 			<p>
 				Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minus harum exercitationem
@@ -237,29 +235,11 @@
 				fugit corrupti quidem dolorum, perspiciatis nostrum esse recusandae deserunt adipisci.
 				Tempora, quam.
 			</p>
-			<div class="flex">
-				<div class="flex basis-1/3 flex-col justify-center">
-					<img
-						class="transition-all delay-100 ease-in-out hover:scale-110 hover:brightness-105"
-						src={student2}
-						alt="student 2"
-					/>
-				</div>
-				<div class="flex basis-1/3 flex-col justify-center">
-					<img
-						class="transition-all delay-100 ease-in-out hover:scale-110 hover:brightness-105"
-						src={student3}
-						alt="student 3"
-					/>
-				</div>
-				<div class="flex basis-1/4 flex-col justify-center">
-					<img
-						class="transition-all delay-100 ease-in-out hover:scale-110 hover:brightness-105"
-						src={student4}
-						alt="student 4"
-					/>
-				</div>
-			</div>
+			<img
+				class="my-8 w-2/3 self-center transition-all delay-100 ease-in-out hover:scale-110 hover:brightness-105"
+				src={students}
+				alt="students"
+			/>
 		</div>
 		<div class="relative flex basis-1/2 flex-col justify-center md:flex-row">
 			<div class="chat chat-start absolute top-28 right-0 text-2xl font-extrabold">

@@ -4,9 +4,9 @@ module.exports = {
 	theme: {
 		extend: {
 			colors: {
-				'layerone-pink-one': '#F56EB3',
-				'layerone-pink-two': '#CB1C8D',
-				'layerone-pink-three': '#7F167F',
+				'layerone-pink-one': '#FFA1C9',
+				'layerone-pink-two': '#F94892',
+				'layerone-pink-three': '#E60965',
 				'layertwo-neon-one': '#D2F6C5',
 				'layertwo-neon-two': '#99F3BD',
 				'layertwo-neon-three': '#28DF99',

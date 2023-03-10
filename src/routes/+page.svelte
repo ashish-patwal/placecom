@@ -158,7 +158,7 @@
 	<section
 		class="relative flex h-full w-full flex-wrap justify-center bg-gradient-to-br from-layertwo-neon-three via-layertwo-neon-two to-layertwo-neon-one p-10 md:h-screen"
 	>
-		<div class="flex basis-1/2 flex-col justify-center gap-6 p-8 font-poppins">
+		<div class="flex basis-1/2 flex-col justify-center gap-6 p-8 font-poppins text-[#09A8FA]">
 			<h1 class="text-5xl font-bold">PLACEMENT PLANNING</h1>
 			<p>
 				Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minus harum exercitationem
@@ -180,7 +180,7 @@
 			/>
 		</div>
 		<div class="relative flex basis-1/2 justify-center md:-order-1">
-			<div class="chat chat-start absolute top-36 right-10 text-2xl font-extrabold">
+			<div class="chat chat-start absolute top-1/3 right-10 text-2xl font-extrabold">
 				<div class="chat-bubble chat-bubble-secondary">Ahh Shit! Here we go again</div>
 			</div>
 			<svg
@@ -189,16 +189,15 @@
 				viewBox="0 0 500 500"
 				width="100%"
 				id="blobSvg"
-				filter="blur(qs0px)"
 				style="opacity: 1;"
-				transform="rotate(qs0)"
+				transform="rotate(qs152)"
 				><image
 					x="0"
 					y="0"
 					width="100%"
 					height="100%"
 					clip-path="url(#shape)"
-					href="https://images.unsplash.com/photo-1567225591450-06036b3392a6?ixlib=rb-4.0.3&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=1770&amp;q=80"
+					href="https://images.unsplash.com/photo-1517849845537-4d257902454a?ixlib=rb-4.0.3&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=1935&amp;q=80"
 					preserveAspectRatio="none"
 				/>
 				<defs>

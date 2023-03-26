@@ -13,7 +13,7 @@
 			/></svg
 		>
 		<p class="text-xl font-bold">
-			Placecom Inc. <br />We place you in a better place.
+			Placecom Inc. <br />We Place You In A Better Place.
 		</p>
 		<p class="text-lg">Copyright © 2023 - All right reserved</p>
 	</div>

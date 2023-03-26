@@ -10,7 +10,7 @@ module.exports = {
 				'layertwo-neon-one': '#D2F6C5',
 				'layertwo-neon-two': '#99F3BD',
 				'layertwo-neon-three': '#28DF99',
-				'layerthree-violet-one': '#F0E3FF',
+				'layerthree-violet-one': '#C1AEFC',
 				'layerthree-violet-two': '#D89CF6',
 				'layerthree-violet-three': '#916DD5',
 				lime: '#9CFF2E',

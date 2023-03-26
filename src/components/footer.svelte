@@ -13,7 +13,7 @@
 			/></svg
 		>
 		<p class="text-xl font-bold">
-			Placecom Inc. <br />Bridging the gap between job seekers and job providers
+			Placecom Inc. <br />We place you in a better place.
 		</p>
 		<p class="text-lg">Copyright © 2023 - All right reserved</p>
 	</div>

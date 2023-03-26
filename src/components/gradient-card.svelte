@@ -1,9 +1,16 @@
 <script>
 	import { fly } from 'svelte/transition'
+	let breakpoint = 1024
+	let windowWidth
 	let kardhovering = false
+	$: if (windowWidth < breakpoint) {
+		kardhovering = true
+	}
 	const info =
 		'As we know that in India, placement drives are generally conducted for technical courses like B tech, MBA, polytechnic, etc; but in this race of placement, students with non technical background are somewhere left behind and here comes our PlaceCom, which is a Roorkee based startup that focuses on conducting placement drives for general courses like B.Sc, B.Com, B.Ed, B pharma and many more so that the students of these courses get more job opportunities and in-hand experience of campus placement.'
 </script>
+
+<svelte:window bind:innerWidth={windowWidth} />
 
 <div class="kard">
 	<div
@@ -11,10 +18,14 @@
 		on:blur
 		on:focus
 		on:mouseover={() => {
-			kardhovering = true
+			if (windowWidth > breakpoint) {
+				kardhovering = true
+			}
 		}}
 		on:mouseout={() => {
-			kardhovering = false
+			if (windowWidth > breakpoint) {
+				kardhovering = false
+			}
 		}}
 	>
 		<h3 class="kard-title font-aneklatin">Who are we exactly ?</h3>
@@ -58,17 +69,19 @@
 		align-self: center;
 	}
 
-	.kard:hover:before {
-		background-position: 100% 100%;
-		transform: scale(1.08, 1.03);
-	}
+	@media (min-width: 1024px) {
+		.kard:hover:before {
+			background-position: 100% 100%;
+			transform: scale(1.08, 1.03);
+		}
 
-	.kard:hover > .kard-content {
-		background-position: -10% 0%;
-	}
+		.kard:hover > .kard-content {
+			background-position: -10% 0%;
+		}
 
-	.kard:hover > .kard-icon {
-		color: white;
+		.kard:hover > .kard-icon {
+			color: white;
+		}
 	}
 
 	.kard:before {

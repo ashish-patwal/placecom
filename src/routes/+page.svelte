@@ -6,8 +6,10 @@
 	import student from '$lib/images/student.svg'
 	import interview from '$lib/images/interview.svg'
 	import career from '$lib/images/career.svg'
+	import whyPlacecom from '$lib/images/why-placecom.jpg'
+	import placementPlanning from '$lib/images/placement-planning.jpg'
+	import greatTalents from '$lib/images/great-talents.jpg'
 	import proposalPresentation from '$lib/images/team/proposal-presentation.svg'
-	import placementPlanning from '$lib/images/team/placement-planning.svg'
 	import students from '$lib/images/team/students.svg'
 
 	let ready = false
@@ -88,9 +90,33 @@
 		</div>
 		<GradientCard />
 	</section>
-	<section
-		class="relative flex h-full w-full flex-wrap justify-center bg-gradient-to-br from-layerone-pink-three via-layerone-pink-two to-layerone-pink-one p-10 md:h-screen "
-	>
+	<section class="pt-10 text-center lg:pt-16">
+		<h1 class="font-BebasNeue text-7xl font-bold lg:text-9xl">SOMETHING ABOUT US</h1>
+	</section>
+	<section class="px-7 pt-7 md:px-20 md:pt-20">
+		<div
+			class="card bg-gradient-to-br from-layerone-pink-three via-layerone-pink-two to-layerone-pink-one font-poppins text-lime shadow-xl lg:card-side"
+		>
+			<figure><img src={whyPlacecom} alt="Album" /></figure>
+			<div class="card-body lg:w-2/3">
+				<h1 class="card-title text-2xl font-bold lg:text-5xl">WHY PLACECOM ?</h1>
+				<p class="lg:text-lg">
+					A one-stop solution for placement opportunities. We are a comprehensive platform to
+					provide services that offers end-to-end assistance to job seekers in finding suitable
+					employment opportunities. We aim to provide a range of services, including job search
+					tools, career counseling, resume building, interview coaching, job matching, and
+					networking opportunities, among others.<br /><br />
+					By leveraging the latest technology and industry insights, we aim to simplify and streamline
+					the job search process for candidates, making it easier for them to identify and apply for
+					relevant job openings. This is particularly useful for recent graduates, professionals looking
+					to switch careers, or individuals returning to the workforce after a break.<br /><br />
+					Overall, we are a one-stop solution for placement opportunities and can provide a valuable
+					resource for job seekers looking to enhance their chances of landing their dream job by providing
+					them with the necessary tools, guidance, and support throughout the job search process.
+				</p>
+			</div>
+		</div>
+		<!--
 		<div class="flex basis-1/2 flex-col justify-center gap-6 p-8 font-poppins text-lime">
 			<h1 class="text-5xl font-bold">PROPOSAL PRESENTATION</h1>
 			<p>
@@ -151,11 +177,32 @@
 					</path></clipPath
 				></svg
 			>
-		</div>
+		</div>-->
 	</section>
-	<section
-		class="relative flex h-full w-full flex-wrap justify-center bg-gradient-to-br from-layertwo-neon-three via-layertwo-neon-two to-layertwo-neon-one p-10 md:h-screen"
-	>
+	<section class="px-7 pt-7 md:px-20 md:pt-20">
+		<!-- class="relative flex h-full w-full flex-wrap justify-center px-10 pt-10 md:h-screen" -->
+		<div
+			class="card bg-gradient-to-br from-layertwo-neon-three via-layertwo-neon-two to-layertwo-neon-one font-poppins text-olive shadow-xl lg:card-side"
+		>
+			<figure><img src={placementPlanning} alt="Album" /></figure>
+			<div class="card-body lg:w-2/3">
+				<h1 class="card-title text-2xl font-bold lg:text-5xl">PLACEMENT PLANNING</h1>
+				<p class="lg:text-lg">
+					Placement planning is a crucial process that involves identifying and preparing for
+					potential job opportunities for candidates. A comprehensive placement plan typically
+					includes several key steps, such as understanding the candidate's career goals and
+					aspirations, assessing their skills and qualifications, identifying potential job
+					openings, and handling the whole interview process with the companies and industries
+					offering us with these job openings.<br /><br />
+					Overall, a well-designed placement plan is critical in helping candidates navigate the placement
+					process and find suitable employment opportunities. By providing candidates with the necessary
+					support, guidance, and resources, placement planning can help ensure that candidates find meaningful
+					and fulfilling jobs that align with their aspirations. At the core, we want to make sure a
+					good placent process occours both for the candidates as well as the companies.
+				</p>
+			</div>
+		</div>
+		<!--
 		<div class="flex basis-1/2 flex-col justify-center gap-6 p-8 font-poppins text-olive">
 			<h1 class="text-5xl font-bold">PLACEMENT PLANNING</h1>
 			<p>
@@ -215,11 +262,28 @@
 					</path></clipPath
 				></svg
 			>
-		</div>
+		</div>-->
 	</section>
-	<section
-		class="relative flex h-full w-full flex-wrap justify-center bg-gradient-to-br from-layerthree-violet-three via-layerthree-violet-two to-layerthree-violet-one p-10 md:h-screen"
-	>
+	<section class="p-7 md:p-20">
+		<div
+			class="card bg-gradient-to-br from-layerthree-violet-three via-layerthree-violet-two to-layerthree-violet-one font-poppins text-mist shadow-xl lg:card-side"
+		>
+			<figure><img src={greatTalents} alt="Album" /></figure>
+			<div class="card-body lg:w-2/3">
+				<h1 class="card-title text-2xl font-bold lg:text-5xl">HIRING GREAT TALENTS FOR YOU</h1>
+				<p class="lg:text-lg">
+					Hiring great talent is essential for any organization that wants to achieve its long-term
+					goals and objectives. However, identifying and attracting top talent can be a challenging
+					and time-consuming process. To overcome these challenges, we ensure a well-designed
+					recruitment strategy that focuses on identifying, attracting, and retaining the best
+					candidates.<br /><br />
+					Our principle goals are to ensure a well communicated medium between the candidates and the
+					job providing companies and organizations, so that both the parties can gain something valuable
+					through the process.
+				</p>
+			</div>
+		</div>
+		<!--
 		<div class="flex basis-1/2 flex-col justify-center gap-6 p-8 font-poppins text-mist">
 			<h1 class="text-5xl font-bold">HIRING GREAT TALENTS FOR YOU</h1>
 			<p>
@@ -278,6 +342,6 @@
 					</path></clipPath
 				></svg
 			>
-		</div>
+		</div>-->
 	</section>
 </main>
